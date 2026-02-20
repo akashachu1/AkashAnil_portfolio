@@ -126,8 +126,8 @@ export const PROJECTS = [
     gallery: [
       "/ecommerce.png",
       "/ecommerce-products.png",
+      "/ecommerce-details.png",
       "/ecommerce-dashboard.png",
-      "/ecommerce-orders.png",
       "/ecommerce-analytics.png"
     ],
     features: [
@@ -137,11 +137,11 @@ export const PROJECTS = [
       "Admin Dashboard for Products"
     ],
     workflow: [
-      { step: "Product Discovery", description: "Browsing through a dynamic catalog with advanced search and category filtering." },
-      { step: "Shopping Experience", description: "Seamless cart management and a multi-step checkout process for user convenience." },
-      { step: "Secure Transactions", description: "Integration with Stripe for industry-standard secure payment processing." },
-      { step: "Order Tracking", description: "Real-time updates on order status and historical data for users." },
-      { step: "Admin Management", description: "Full control over inventory, product listings, and detailed sales analytics via the dashboard." }
+      { step: "Product Discovery", description: "Browsing a dynamic catalog with side-bar filtering for brands, categories, and price ranges." },
+      { step: "Detailed Inspection", description: "Viewing rich product details, high-quality image galleries, and verified customer ratings." },
+      { step: "Secure Checkout", description: "Seamless cart management and protected payment processing for a smooth user journey." },
+      { step: "Admin Control", description: "Powerful backend for managing inventory, tracking unique visitors, and monitoring profit growth." },
+      { step: "Sales Analytics", description: "Visualized data insights for business growth and real-time order tracking." }
     ]
   },
   {

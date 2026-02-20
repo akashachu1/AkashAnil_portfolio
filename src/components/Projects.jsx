@@ -94,12 +94,60 @@ const Projects = () => {
                 
                 <h2 style={{ color: 'white', marginBottom: '1rem', textAlign: 'center' }}>{selectedProject.title} Gallery</h2>
                 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                    {selectedProject.gallery.map((img, index) => (
-                        <div key={index} style={{ width: '100%' }}>
-                            <img src={img} alt={`Screenshot ${index + 1}`} style={{ width: '100%', height: 'auto', borderRadius: '0.5rem', border: '1px solid #374151' }} />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                    {selectedProject.workflow && (
+                      <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        style={{ background: 'rgba(59, 130, 246, 0.05)', padding: '2rem', borderRadius: '1.2rem', border: '1px solid rgba(59, 130, 246, 0.2)' }}
+                      >
+                        <h3 style={{ color: 'var(--primary)', marginBottom: '2rem', fontSize: '1.5rem', fontWeight: '700', borderLeft: '4px solid var(--primary)', paddingLeft: '1rem' }}>Project Workflow</h3>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                          {selectedProject.workflow.map((item, i) => (
+                            <motion.div 
+                              key={i} 
+                              initial={{ opacity: 0, x: -20 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ delay: i * 0.1 }}
+                              style={{ display: 'flex', gap: '1.2rem' }}
+                            >
+                              <div style={{ 
+                                minWidth: '32px', height: '32px', background: 'var(--primary)', 
+                                borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', 
+                                fontSize: '0.9rem', fontWeight: 'bold', color: 'white', flexShrink: 0,
+                                boxShadow: '0 4px 10px rgba(59, 130, 246, 0.3)'
+                              }}>{i + 1}</div>
+                              <div>
+                                <h4 style={{ color: '#fff', fontSize: '1.1rem', marginBottom: '0.3rem', fontWeight: '600' }}>{item.step}</h4>
+                                <p style={{ color: '#9ca3af', fontSize: '0.95rem', lineHeight: '1.5' }}>{item.description}</p>
+                              </div>
+                            </motion.div>
+                          ))}
                         </div>
-                    ))}
+                      </motion.div>
+                    )}
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: '700' }}>Visual Showcase</h3>
+                        <div style={{ height: '2px', flexGrow: 1, background: 'linear-gradient(to right, rgba(255,255,255,0.1), transparent)' }}></div>
+                      </div>
+                      
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+                        {selectedProject.gallery.map((img, index) => (
+                            <motion.div 
+                              key={index} 
+                              initial={{ opacity: 0, scale: 0.95 }}
+                              whileInView={{ opacity: 1, scale: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5 }}
+                              style={{ width: '100%', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.05)' }}
+                            >
+                                <img src={img} alt={`Screenshot ${index + 1}`} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                            </motion.div>
+                        ))}
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>

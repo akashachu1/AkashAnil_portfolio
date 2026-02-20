@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { HERO } from '../data';
-import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -72,10 +72,26 @@ const Hero = () => {
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ delay: 0.5 }}
-             style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
+             style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
           >
-             <a href="#projects" className="btn btn-primary">View My Work</a>
-             <a href="#contact" className="btn">Contact Me</a>
+             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="#projects" className="btn btn-primary">View My Work</a>
+                <a href="#contact" className="btn">Contact Me</a>
+             </div>
+             
+             <a href="/resume.pdf" download="Akash_Anil_CV.pdf" className="btn" style={{ 
+                background: 'transparent', 
+                border: '1px solid var(--primary)', 
+                color: 'var(--primary)',
+                width: 'fit-content', 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '0.5rem',
+                fontSize: '0.9rem',
+                padding: '0.6rem 1.5rem'
+             }}>
+                <FaDownload /> Download CV
+             </a>
           </motion.div>
           
           <div style={{ marginTop: '2.5rem', display: 'flex', alignItems: 'center', gap: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>

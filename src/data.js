@@ -62,29 +62,22 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    id: 1,
-    title: "Library Management System",
-    description: "A comprehensive system for managing library operations.",
-    tech: ["MongoDB", "Express.js", "Node.js", "React.js"],
-    image: "/library.png",
+    id: 7,
+    title: "Kalisto",
+    description: "Frontend built with React, deployed on Vercel.",
+    tech: ["React", "Vercel"],
+    image: "/kalisto.png",
+    link: "https://kallisto-eight.vercel.app/",
+    gallery: [
+      "/kalisto.png",
+      "/kalisto-1.png",
+      "/kalisto-2.png",
+      "/kalisto-3.png"
+    ],
     features: [
-      "CRUD Operations: Add, update, delete book records.",
-      "Issuing & Returning: Real-time inventory updates.",
-      "Database: MongoDB for data integrity.",
-      "APIs: RESTful APIs built with Express.js."
-    ]
-  },
-  {
-    id: 2,
-    title: "Whatsapp Clone",
-    description: "A real-time messaging application clone.",
-    tech: ["Firebase", "MongoDB", "Express.js", "React.js"],
-    image: "/whatsapp.png",
-    features: [
-      "Authentication: Firebase for secure sign-ins.",
-      "Group Chat: Create and manage multiple participants.",
-      "Backend: MongoDB for user and message storage.",
-      "Integration: Seamless frontend-backend with Express.js."
+      "Responsive Frontend Design",
+      "Deployed on Vercel",
+      "Modern UI/UX"
     ]
   },
   {
@@ -92,7 +85,14 @@ export const PROJECTS = [
     title: "HRMS (Human Resource Management System)",
     description: "A complete HR solution for employee management, attendance, and payroll.",
     tech: ["MERN Stack", "Redux", "JWT"],
-    image: "/hrms.png",
+    image: "/hrms-dashboard.png",
+    gallery: [
+      "/hrms-dashboard.png",
+      "/hrms-employees.png",
+      "/hrms-leave.png",
+      "/hrms-payroll.png",
+      "/hrms-login.png"
+    ],
     features: [
       "Employee Database Management",
       "Leave & Attendance Tracking",
@@ -105,7 +105,13 @@ export const PROJECTS = [
     title: "E-Commerce Platform",
     description: "Full-stack e-commerce solution with cart, payment, and admin dashboard.",
     tech: ["React.js", "Node.js", "Stripe", "MongoDB"],
-    image: "/ecommerce.png",
+    image: "/ecommerce-dashboard.png",
+    gallery: [
+      "/ecommerce-dashboard.png",
+      "/ecommerce-products.png",
+      "/ecommerce-analytics.png",
+      "/ecommerce-orders.png"
+    ],
     features: [
       "Product Catalog & Search",
       "Secure Payment Gateway",
@@ -114,11 +120,52 @@ export const PROJECTS = [
     ]
   },
   {
+    id: 2,
+    title: "Whatsapp Clone",
+    description: "A real-time messaging application clone.",
+    tech: ["Firebase", "MongoDB", "Express.js", "React.js"],
+    image: "/whatsapp.png",
+    gallery: [
+      "/whatsapp.png",
+      "/whatsapp-1.png",
+      "/whatsapp-2.png"
+    ],
+    features: [
+      "Authentication: Firebase for secure sign-ins.",
+      "Group Chat: Create and manage multiple participants.",
+      "Backend: MongoDB for user and message storage.",
+      "Integration: Seamless frontend-backend with Express.js."
+    ]
+  },
+  {
+    id: 1,
+    title: "Library Management System",
+    description: "A comprehensive system for managing library operations.",
+    tech: ["MongoDB", "Express.js", "Node.js", "React.js"],
+    image: "/library.png",
+    gallery: [
+      "/library.png",
+      "/library-1.png",
+      "/library-2.png"
+    ],
+    features: [
+      "CRUD Operations: Add, update, delete book records.",
+      "Issuing & Returning: Real-time inventory updates.",
+      "Database: MongoDB for data integrity.",
+      "APIs: RESTful APIs built with Express.js."
+    ]
+  },
+  {
     id: 5,
     title: "Task Management App",
     description: "Collaborative task manager for teams.",
     tech: ["Next.js", "PostgreSQL", "Prisma", "Tailwind"],
     image: "/task.png",
+    gallery: [
+      "/task.png",
+      "/task-1.png",
+      "/task-2.png"
+    ],
     features: [
       "Kanban Board Interface",
       "Real-time Updates",
@@ -132,6 +179,11 @@ export const PROJECTS = [
     description: "Comparison of Air and Different Aerogel as Coolant (B.Tech Capstone)",
     tech: ["Ansys Workbench", "Solidworks", "Catia"],
     image: "/analysis.png",
+    gallery: [
+      "/analysis.png",
+      "/analysis-1.png",
+      "/analysis-2.png"
+    ],
     features: [
       "Analysis using Ansys",
       "Modeling with Solidworks/Catia",

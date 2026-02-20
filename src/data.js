@@ -64,20 +64,30 @@ export const PROJECTS = [
   {
     id: 7,
     title: "Kalisto",
-    description: "Frontend built with React, deployed on Vercel.",
-    tech: ["React", "Vercel"],
+    description: "A premium service provider onboarding and material procurement platform built with React.",
+    tech: ["React", "Vercel", "Framer Motion", "CSS3"],
     image: "/kalisto.png",
     link: "https://kallisto-eight.vercel.app/",
     gallery: [
       "/kalisto.png",
       "/kalisto-1.png",
       "/kalisto-2.png",
-      "/kalisto-3.png"
+      "/kalisto-3.png",
+      "/kalisto-4.png"
     ],
     features: [
-      "Responsive Frontend Design",
-      "Deployed on Vercel",
-      "Modern UI/UX"
+      "Dynamic Multi-step Onboarding",
+      "Service Provider Profile Management",
+      "Construction Material Marketplace",
+      "Responsive & Premium UI/UX",
+      "Beta Program Integration"
+    ],
+    workflow: [
+      { step: "Partner Welcome", description: "Initial access request and business identification page for potential service providers." },
+      { step: "Professional Profiling", description: "Step-by-step branding setup including location, years of experience, and professional summary." },
+      { step: "Expertise Assessment", description: "Detailed capture of project capacity, historical scale, and team structure for verification." },
+      { step: "Materials Portal", description: "Direct access to verified construction materials with transparent pricing and ordering." },
+      { step: "Onboarding Success", description: "Final confirmation page with automated follow-up scheduling for beta participants." }
     ]
   },
   {

@@ -38,11 +38,15 @@ const Navbar = () => {
          }}>
       
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div className="logo" style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-          <div style={{ width: '35px', height: '35px', background: 'var(--primary)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <span style={{ color: 'white', fontSize: '1.2rem', fontWeight: 'bold' }}>A</span>
+        <div className="logo" style={{ fontSize: '1.6rem', fontWeight: '900', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.9rem' }}>
+          <div style={{ 
+            width: '40px', height: '40px', background: 'var(--primary)', 
+            borderRadius: '12px', display: 'flex', alignItems: 'center', 
+            justifyContent: 'center', boxShadow: '0 8px 16px rgba(59, 130, 246, 0.3)' 
+          }}>
+            <span style={{ color: 'white', fontSize: '1.4rem', fontWeight: 'bold' }}>A</span>
           </div>
-          <span style={{ letterSpacing: '-0.5px' }}>Akash Anil</span>
+          <span style={{ letterSpacing: '-1px' }}>AKASH <span style={{ color: 'var(--primary)', opacity: 0.8 }}>ANIL</span></span>
         </div>
 
         {/* Desktop Menu */}

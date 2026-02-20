@@ -25,17 +25,22 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             style={{ 
-              display: 'inline-block',
-              padding: '0.5rem 1rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.6rem',
+              padding: '0.6rem 1.2rem',
               borderRadius: '50px',
-              background: 'rgba(59, 130, 246, 0.1)',
+              background: 'rgba(59, 130, 246, 0.08)',
               border: '1px solid rgba(59, 130, 246, 0.2)',
               color: 'var(--primary)',
-              marginBottom: '1.5rem',
-              fontWeight: '600',
-              fontSize: '0.9rem'
+              marginBottom: '2rem',
+              fontWeight: '700',
+              fontSize: '0.85rem',
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase'
             }}
            >
+             <span style={{ width: '8px', height: '8px', background: 'var(--primary)', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px var(--primary)' }}></span>
              Available for Work
            </motion.div>
 
